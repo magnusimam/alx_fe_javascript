@@ -140,3 +140,13 @@ select:focus {
   color: #666;
   font-size: 0.9rem;
 }
+
+.storage-container {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.storage-container button {
+  margin-bottom: 10px;
+}
