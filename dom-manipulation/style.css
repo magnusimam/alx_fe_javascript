@@ -150,3 +150,77 @@ select:focus {
 .storage-container button {
   margin-bottom: 10px;
 }
+
+.sync-container {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.sync-status {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+}
+
+.sync-status.syncing {
+  border-color: #ffa500;
+  background: #fff8e1;
+}
+
+.sync-status.synced {
+  border-color: #4caf50;
+  background: #e8f5e9;
+}
+
+.sync-status.error {
+  border-color: #f44336;
+  background: #ffebee;
+}
+
+#syncStatusText {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#lastSyncTime {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.conflict-notification {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.conflict-notification p {
+  color: #856404;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.conflict-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.conflict-actions button {
+  flex: 1;
+}
+
+#acceptServerData {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+}
+
+#keepLocalData {
+  background: linear-gradient(135deg, #f44336 0%, #da190b 100%);
+}
