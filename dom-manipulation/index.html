@@ -28,6 +28,23 @@
       <input type="file" id="importFile" accept=".json" style="display: none;" />
       <button id="importQuotes">Import Quotes from JSON</button>
     </div>
+    
+    <div class="sync-container">
+      <h2 class="form-title">Server Sync</h2>
+      <div class="sync-status" id="syncStatus">
+        <span id="syncStatusText">Not synced</span>
+        <span id="lastSyncTime"></span>
+      </div>
+      <button id="syncNow">Sync with Server Now</button>
+      <button id="toggleAutoSync">Enable Auto-Sync</button>
+      <div id="conflictNotification" class="conflict-notification" style="display: none;">
+        <p id="conflictMessage"></p>
+        <div class="conflict-actions">
+          <button id="acceptServerData">Accept Server Data</button>
+          <button id="keepLocalData">Keep Local Data</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
