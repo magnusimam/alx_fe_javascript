@@ -264,6 +264,11 @@ function keepLocalData() {
   hideConflictNotification();
 }
 
+// Main sync function (alias: syncQuotes)
+async function syncQuotes() {
+  return await syncWithServer();
+}
+
 // Main sync function
 async function syncWithServer() {
   if (conflictDetected) {
