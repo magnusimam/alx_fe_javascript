@@ -311,8 +311,10 @@ async function syncWithServer() {
         
         // Show notification
         showNotification(`Added ${addedCount} new quote(s) from server!`, 'success');
+        alert('Quotes synced with server!');
       } else {
         updateSyncStatus('synced', 'Synced successfully (up to date)', new Date().toISOString());
+        alert('Quotes synced with server!');
       }
       
       // Post local changes to server
